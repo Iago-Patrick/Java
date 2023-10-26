@@ -8,7 +8,7 @@ import jakarta.persistence.Column;
 
 @Entity
 
-public class Pessoas {
+public class Pessoa {
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Long id;
@@ -44,12 +44,12 @@ public class Pessoas {
     public void setSenha(String senha) {
         this.senha = senha;
     }
-    public Pessoas(String nome, String email, String senha) {
+    public Pessoa(String nome, String email, String senha) {
         this.email = email;
         this.senha = senha;
         this.nome = nome;
     }
-    public Pessoas()
+    public Pessoa()
     {
         
     }    
